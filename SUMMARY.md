@@ -8,7 +8,7 @@
    * [DHT](history/dht.md)
    * [TOR](history/tor.md)
 * [YouBase](youbase/README.md)
-   * Tree
+   * [Tree](tree.md)
    * Store
    * Schema
 * [Applications](applications/README.md)
