@@ -15,7 +15,6 @@
    * [Healthcare](applications/healthcare.md)
    * [Identity](applications/identity.md)
    * [Social](applications/social.md)
-   * Supply Chain
 * [Conclusion](conclusion.md)
 * [References](references.md)
 
