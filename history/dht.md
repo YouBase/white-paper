@@ -1,6 +1,6 @@
 # DHT
 
-Distributed Hash tables are a decentralized, distributed system for storing key/value pairs where any node in the network can efficiently retrieve a value given a certain key. Ability to mapy keys to values is distributed among the nodes, such that changes to participating nodes is minimally disruptive.
+Distributed Hash tables are a decentralized, distributed system for storing key/value pairs where any node in the network can efficiently retrieve a value given a certain key. Ability to map keys to values is distributed among the nodes, such that changes to participating nodes is minimally disruptive.
 
 From Wikipedia: 
 
