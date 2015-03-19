@@ -6,7 +6,9 @@ The HD contains a tree structure such that each parent key can derive the childr
 
 At the first level, just under the Master Key, bip43 suggests using only one branch, which will identify the purpose of the wallet. We propose using branch (x) to identify a data store. 
 
-The next grandchild, or second layer below the master key layer will be designated as a profile layer. On this layer, we envision several types of profiles, including: an identity profile set, a health record profile, a financial layer, an online identity layer for social accounts and more.
+The next grandchild, or second layer below the master key layer will be designated as a profile layer. On this layer, we envision several types of profiles, including: an identity profile set, a health record profile, a financial profile, a social profile and more.
+
+As a children to the health profile level, we there will be a collections layer. The collections layer will define many different types of health data collections.
 
 
 
