@@ -1,11 +1,17 @@
 # Introduction
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Value to conferred to individuals is suboptimal when relying on third parties to manage and control access to our personal information. Relying on third parties inevitably leads to conflicts in how personal data will be used as third parties are not likely to be completely economically and otherwise aligned with the interests of the individual. Third parties may consider an individual's access and ability to share information as a potential cost with little potential upside, for example. 
 
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
+There are also incongruencies in perceived risk to data loss. An individual’s confidential information may be seen as a corporate asset to a third party managing this information but still a low perceived risk to the organization in the event of a data breach, and therefore insufficient resources dedicated to data security. A healthcare organization, for example, may suffer embarrassment, a fine and some loss of business for a medical record breach, while an individual my face identity theft, arguably a far more severe consequence of the same theft. Individuals might have a high perceived risk of a breach of this information, but little control in preventing such a breach as information can be spread among third, fourth and more parties. In the last year alone (as of early 2015) tens of millions of inidvidual records have been compromised. These breaches have led to tens of millions of personally identifiable information, including social security numbers, names, bank accounts, birth dates, addresses and more. On the black market, it's estimated these records are worth $50 each. That's getting close to a $billion worth of breaches in the last year alone, and much of it has to do with the centralized nature of how the data is stored.
+
+Individuals that recognize the value of their data often find ways to reuse and repurpose personal information. For example they might decide to share anonymized information for research or charity along the lines of Apple's ResearchKit. Most third party organizations have found high risk and little benefit in doing so.
+
+Cryptography coupled with systems designed to support distributed applications and databases in peer-to-peer networks are providing the fundamental conditions required for securing stores of individual-centered digital property and assets in a standards-based manner, independent of any third party. By using encryption, digital signatures, bitcoin wallets and distributed data, ownership of digital information with an associated (often monetary) value can be managed in a decentralized store. Such a store will be simultaneously secure, with strong identity services, yet available anywhere. The store will also be controlled by the individual owner, beyond the control of any single organization.
+
+This is a radical shift. In creating such systems, the opportunity exists to solve fundamental issues across B2B, B2C and C2C domains, including: managing multiple accounts, identities and preferences, creating trusted, verified identities, linking these identities to a wide variety of attributes and data. Medical records, social content, confidential documents, as well as authorizations and access to a variety benefits and shared resources are just a few use cases. 
+
+Information and rights to that information would ideally follow an individual as they move through various contexts in their daily life, allowing the ability to authorize read and write access to this information to trusted, verified entities within those contexts. A longitudinal record could be created, including consumer-generated application data, with the individual as the primary controller of access -- all independent of a third party.
+
+The implementation of such a system will create incentives for institutions to build trusted relationships with individuals in order that they could access this information, with the opportunity to provide specific benefits to the individuals for doing so. An individual-centered data store could also open the door to a massive release of individual data for population research, with specific applications in population health, as an example, and not owned or controlled by any one organization.
+
+As a solution to these challenges in providing control and ownership around personal data, we propose an individual-centric, encrypted, decentralized and distributed data store which uses a BIP-32 public-private key pair tree to manage identity and read-write authorizations.
