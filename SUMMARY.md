@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Background](history/README.md)
+* [History](history/README.md)
    * [Bitcoin](history/bitcoin.md)
    * [BIP32](history/bip32.md)
    * [IPFS](history/ipfs.md)
@@ -9,7 +9,7 @@
    * [TOR](history/tor.md)
 * [YouBase](youbase/README.md)
    * [Tree](tree.md)
-   * Store
+   * [Store](store.md)
    * Schema
 * [Applications](applications/README.md)
    * [Healthcare](applications/healthcare.md)
