@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [History](history/README.md)
+* [Background](history/README.md)
    * [Bitcoin](history/bitcoin.md)
    * [BIP32](history/bip32.md)
    * [IPFS](history/ipfs.md)
