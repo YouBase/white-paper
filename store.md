@@ -12,7 +12,9 @@ YouBase brings together the best of the free net (Gnutella, Torrent, etc.) with 
 
 These servers will be owned and run by existing organizations within the highly regulated healthcare ecosystem. These organizations are legally and ethically prevented from engaging in privacy-jeopardizing collusion. We refer to them as "non cooperative entities" ("NCE"s) and they may include payers (insurance companies, governments), in-vitro diagnostic labs, patient advocates, and non-profit groups. These non-cooperative entities will run servers and each server will contain part of the DHT. 
 
-[This will also add to efficiency, as a limited amount of work will need to be done because similar nodes will interact frequently]
+[This will also add to efficiency, as a limited amount of work will need to be done because similar nodes will interact frequently.]
+
+[should we consider the impact of ultra-cheap cloud storage? consider Amazon's recent announcement of unlimited cloud storage for individuals at only $60]
 
 Further, the next version of the model YouBase implementation contemplates an even greater level of storage security which we refer to as:  Mutually Assured Privacy (for v2 of the UnPatients manifesto). In this advanced version, the recipient of the information (the doctor or medical AI) is putting his/its own private key on the line. Under the Mutually Assured Privacy system "uou have to protect your information as if it was your own, because it is"
 
