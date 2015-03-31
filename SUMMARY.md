@@ -10,7 +10,7 @@
 * [YouBase](youbase/README.md)
    * [Tree](tree.md)
    * [Store](store.md)
-   * Schema
+   * [Schema](schema.md)
 * [Applications](applications/README.md)
    * [Healthcare](applications/healthcare.md)
    * [Identity](applications/identity.md)
