@@ -1,6 +1,6 @@
 # Introduction
 
-Relying on third parties inevitably leads to conflicts in how personal data is used. Third parties are not normally economically and otherwise aligned with the interests of the individual. For example, third parties may consider an individual's access and ability to share their own personal information as a cost with little potential upside.
+Value to individuals is not maximized when relying on third parties to manage and control access to personal information. Relying on third parties inevitably leads to conflicts in how personal data is used as third parties are not normally economically and otherwise aligned with the interests of the individual. For example, third parties may consider an individual's access and ability to share their own personal information as a cost with little potential upside.
 
 Misalignments in perceived risk to data breach are common. An individual’s confidential personal information is a corporate asset to a third party, but securing this information may not be a high priority. Insufficient resources are often dedicated to data security. A healthcare organization, for example, may suffer embarrassment, a fine and some loss of business for a medical record breach, while an individual my face identity theft -- arguably a far more severe consequence of the same theft. 
 
