@@ -16,5 +16,5 @@ These servers will be owned and run by existing organizations within the highly 
 
 [should we consider the impact of ultra-cheap cloud storage? consider Amazon's recent announcement of unlimited cloud storage for individuals at only $60]
 
-Further, the next version of the model YouBase implementation contemplates an even greater level of storage security which we refer to as:  Mutually Assured Privacy (for v2 of the UnPatients manifesto). In this advanced version, the recipient of the information (the doctor or medical AI) is putting his/its own private key on the line. Under the Mutually Assured Privacy system "uou have to protect your information as if it was your own, because it is"
+Further, the next version of the model YouBase implementation contemplates an even greater level of storage security which we refer to as:  Mutually Assured Privacy [NB: for v2 of the UnPatients manifesto]. In this advanced version, the recipient of the information (the doctor or medical AI) is putting his/its own private key on the line. Under the Mutually Assured Privacy system "you have to protect your information as if it was your own, because it is"
 
