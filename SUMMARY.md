@@ -1,12 +1,12 @@
 # Summary
 
 * [Introduction](README.md)
-* [History](history/README.md)
-   * [Bitcoin](history/bitcoin.md)
-   * [BIP32](history/bip32.md)
-   * [IPFS](history/ipfs.md)
-   * [DHT](history/dht.md)
-   * [TOR](history/tor.md)
+* [Background](background/README.md)
+   * [Bitcoin](background/bitcoin.md)
+   * [BIP32](background/bip32.md)
+   * [IPFS](background/ipfs.md)
+   * [DHT](background/dht.md)
+   * [TOR](background/tor.md)
 * [YouBase](youbase/README.md)
    * [Tree](tree.md)
    * [Store](store.md)
