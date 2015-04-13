@@ -4,8 +4,8 @@ The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet
 ## Seeding and creating the HD Wallet
 
 
-YouBase uses a BIP32 hierarchical deterministic wallet (or "HD Wallet") which is seeded through a BIP39 12 or more word passphrase. The passphrase seeds a hash function for the creation of a BIP32 hierarchical deterministic (HD) wallet tree. It’s a flat key structure that is reconstituted in the Wallet. 
-Structured read write access control can then be avaialbe with the use of keys.
+YouBase uses a BIP32 hierarchical deterministic wallet (or "HD Wallet") which is seeded through a BIP39 12 or more word passphrase. The passphrase or even a photo taken with a smart phone could seed a hash function for the creation of a BIP32 hierarchical deterministic (HD) wallet tree. It’s a flat key structure that is reconstituted in the Wallet. 
+Structured read write access control can then be available with the use of keys.
 
 The client software will manage the tree of Private-Public keys of the HD wallet, including a top-level master key. This client software could exist on web (similar to CoinBase),  smartphone or on a local computer. Verifications to access nodes in the tree could be combined with biometric scans on a local device such as a smartphone.
 
