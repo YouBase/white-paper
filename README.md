@@ -1,6 +1,6 @@
 # Introduction
 
-Security, privacy, identity and accessibility have historically been difficult to balance. Using personal information as part of identity for secure access creates difficulties keeping this information private. These misalignements have led to enormous cost and risk associate with managing and securing personal records by third parties. 
+Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignements have led to enormous cost and risk associate with managing and securing personal records by third parties. 
 
 Breaches have become all-too-common because of the high value to identity thieves. A premium is paid on the black market for such records, estimated at $50 per record for medical records. In Q1 2015 alone, nearly 100 million medical record have been compromised, including identity, clinical and financial information. At the same time, a person's ability to access and manage personal information that rests with third parties is difficult.
 
@@ -16,10 +16,10 @@ As a solution to these challenges, YouBase is an individual-centric, encrypted, 
 
 Using the HD wallet structure allows for several benefits to be built into the design:
 
-1. Data agnostic. Securely input, access and/share share any kind of file or record quickly, anytime, by providing keys and digital signatures.  Using a public-private key hierarchy for data access provides for a universal address to read or write information based on an individual’s HD wallet. JSON messages
+3) Data agnostic. Securely input, access and/share share any kind of file or record quickly, anytime, by providing keys and digital signatures.  Using a public-private key hierarchy for data access provides for a universal address to read or write information based on an individual’s HD wallet. JSON messages
 
 
-2.  Structured access. A way to organize authorized access to information into a structured hierarchy The hierarchical structure allows for entire branches below a node. Specific branches of the tree can also be used to provide information about versions of various standard definitions.
+2) Structured access. A way to organize authorized access to information into a structured hierarchy The hierarchical structure allows for entire branches below a node. Specific branches of the tree can also be used to provide information about versions of various standard definitions.
 
 3) Proven identity without storing 3rd party personal info. improved anonymous information sharing that could be used as a public or shared private asset 
 
@@ -29,5 +29,5 @@ Using the HD wallet structure allows for several benefits to be built into the d
 
 6) Encapsulation. Because each data element has an address, any one breach can insulated from an attack on another
 
-7) Anonymity. Without a high-level key, no one element of data can be tied to any other.
+7) Anonymity. Without a high-level key, no one element of data can be tied to any other. With this level of data anonymity, more data can be donated by users for use in various forms of data commons.
 
