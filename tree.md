@@ -15,7 +15,7 @@ As a children to the health profile level, we there will be a collections layer.
 
 To send an immunization record to a provider or a school district, the wallet owner could
 
-Get into SCHEMA here.
+
 
 
 
