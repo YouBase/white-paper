@@ -1,5 +1,6 @@
 # Schema
 
+Schemas will be defined via JSON. Below is an example of a sample health profile definition:
 
 ```json
 {
