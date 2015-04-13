@@ -1,5 +1,5 @@
 # YouBase Tree
-The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet tree for the control of access to personal data stores. The use of an HD wallet offers several advantages, including:  1) allowing for control of read/write access to individual leaves and branches of a tree, 2) segregating identity profile information from other profile information, so information is trusted without relying on personal data, 3) the ability to designate specific branches as data stores for specific types of information and, therefore, the use of specific branches identify the purpose of the tree  4) the ability to tie payments to trusted information exchange. 
+The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet tree for the control of access to personal data stores. The use of an HD wallet offers several advantages, including:  1) allowing for control of read/write access to individual leaves and branches of a tree, 2) segregating identity profile information from other profile information, so information is trusted without relying on personal data, 3) the ability to designate specific branches as data stores for specific types of information and, therefore, the use of specific branches identify the purpose of the tree  4) the ability to tie payments to trusted information exchange. 5) loss of key means only losing information for that part of the tree, which can be quickly marked as "dead" and copied to address 6) rapid transfer of just about any type of data from one a party to another, a universal, secure email.
 
 ## Seeding and creating the HD Wallet
 
@@ -34,6 +34,8 @@ I have a piece of identification unique to me, say a picture of a driver’s lic
 So, using public and private key signature schemes, only those with the private key for a public key with which a message is hashed will be able to receive the information, much like the recipient of a locked box. Based on public and private key pairs, we can therefore ensure the identity of someone sending information, without publicly declaring who that person is with personal information.  The payload within the locked box can confirm their information.
 
 This scheme alleviates many problems with many current identity and security mechanisms, which rely on personal information to confirm identity, and are therefore the focus of attacks. It also segregates identity information from other personal information, such that this personal information can be repurposed without revealing identity information, say, for public health benefits. We'll discuss other such use cases in the "applications" section.
+
+
 
 ## Collections
 
