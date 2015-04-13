@@ -20,9 +20,9 @@ At the first public/private key level of the hierarchy, just under the Master Ke
 ## Segregating Identy from Personal Information in Profiles
 
 
-The next grandchild, or second layer below the master key layer will be designated as a profile layer. This is a hardened key layer meaning that children cannot be derived from the parent’s public key to protect profiles from inadvertent loss of private keys. 
+The next grandchild, or second layer below the master key layer will be designated as a profile layer. This is a hardened key layer meaning that children cannot be derived from the parent’s public key to protect profiles information from inadvertent loss of private keys. 
 
-Keys on this layer will represent repositories for various profiles defined by JSON. We recommend that a version of the JSON profile be designated as the 0th child of the profile. On  the profile layer there could exist several types of profiles data sets, including: an identity profile set, a health record profile set, a financial profile, a social profile, application profile.
+Keys on this layer will represent repositories for various profiles defined in JSON. We recommend that a version of the JSON profile version be designated as the 0th child of the profile. On  the profile layer there could exist several types of profiles data sets, including: an identity profile set, a health record profile set, a financial profile, a social profile, application profile.
 
 We’ll address greater detail in the “uses” section on Identity, but the identity profile branch could include identity profile information with multiple signed identity documents as evidence that keys are attached to these identifiers, verifiable to the same public keys. One could, for example, create hashes of identity documents. An individual could do a hash of identity profile and have an authorized person, such as a nurse in a physician’s office, digitally sign it, saying that this person belongs to this profile.  One could hash of an image of an individual’s driver’s license, for instance that was signed by an authority as valid, much like a Notary verifies identity and signatures today on paper. 
 
