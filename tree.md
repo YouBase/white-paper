@@ -9,6 +9,8 @@ Structured read write access control can then be avaialbe with the use of keys.
 
 The client software will manage the tree of Private-Public keys of the HD wallet, including a top-level master key. This client software could exist on web (similar to CoinBase),  smartphone or on a local computer. Verifications to access nodes in the tree could be combined with biometric scans on a local device such as a smartphone.
 
+## Structure
+
 (Insert graphic here)
 
 The HDWallet contains a tree structure such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc.  
@@ -21,7 +23,7 @@ The next grandchild, or second layer below the master key layer will be designat
 
 Keys on this layer will represent repositories for various profiles defined by JSON. We recommend that a version of the JSON profile be designated as the 0th child of the profile. On  the profile layer there could exist several types of profiles data sets, including: an identity profile set, a health record profile set, a financial profile, a social profile, application profile.
 
-We’ll get into more details in the “uses” section on Identity, but the identity profile branch could include identity profile information with multiple signed identity documents as evidence that keys are attached to these identifiers, verifiable to the same public keys. One could, for example, create hashes of identity documents. An individual could do a hash of identity profile and have an authorized person, such as a nurse in a physician’s office, digitally sign it, saying that this person belongs to this profile.  One could hash of an image of an individual’s driver’s license, for instance that was signed by an authority as valid, much like a Notrary verifies identity and signatures today on paper. 
+We’ll address greater detail in the “uses” section on Identity, but the identity profile branch could include identity profile information with multiple signed identity documents as evidence that keys are attached to these identifiers, verifiable to the same public keys. One could, for example, create hashes of identity documents. An individual could do a hash of identity profile and have an authorized person, such as a nurse in a physician’s office, digitally sign it, saying that this person belongs to this profile.  One could hash of an image of an individual’s driver’s license, for instance that was signed by an authority as valid, much like a Notrary verifies identity and signatures today on paper. 
 
 The process irrevocably ties the signature (the signer) to digital property asset stores in other areas of the tree, verifying an identity without revealing it. The HD structure enables an internal mathemantical consistency for quick verification, but no way to relate two public keys as being related. An advantage of this system is that whether an individual is who they say they are become a verifiable binary (yes/no) piece of information rather than a store of personal information. 
 
@@ -32,8 +34,8 @@ So, using public and private key signature schemes, only those with the private 
 
 This scheme alleviates many problems with many current identity and security mechanisms, which rely on personal information to confirm identity, and are therefore the focus of attacks. It also segregates identity information from other personal information, such that this personal information can be repurposed without revealing identity information, say, for public health benefits.
 
+## Collections
 
-Collections
 
 As a children to the health profile level, part of the health branch we there will be a collections layer. The collections layer will define many different types of health data collections. An immunization record, a list of allergies, current and past medications could all be included as various collections.
 
