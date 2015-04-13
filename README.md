@@ -16,18 +16,20 @@ As a solution to these challenges, YouBase is an individual-centric, encrypted, 
 
 Using the HD wallet structure allows for several benefits to be built into the design:
 
-3) Data agnostic. Securely input, access and/share share any kind of file or record quickly, anytime, by providing keys and digital signatures.  Using a public-private key hierarchy for data access provides for a universal address to read or write information based on an individual’s HD wallet. JSON messages
+1) Data agnostic. Securely input, access and/share share any kind of file or record quickly, anytime, by providing keys and digital signatures via JSON.  Using a public-private key hierarchy for data access provides for a universal address to read or write information based on an individual’s HD wallet. 
 
 
-2) Structured access. A way to organize authorized access to information into a structured hierarchy The hierarchical structure allows for entire branches below a node. Specific branches of the tree can also be used to provide information about versions of various standard definitions.
+2) Structured access. A way to organize authorized access to information into a structured hierarchy. The hierarchical structure allows for entire branches below a node. Specific branches of the tree can also be used to provide information about versions of various standard definitions.
 
 3) Proven identity without storing 3rd party personal info. improved anonymous information sharing that could be used as a public or shared private asset 
 
-4) Blockchain available, but not dependent. information sharing transactions can be to be tied directly to a universal ledger as a public proof and/or as a financial transaction.
+4) Blockchain available, but not dependent. information sharing transactions can be to be tied directly to a universal ledger as a public proof and/or as a financial transaction, but are not required to be.
 
 5) Data transactions tied to financial transactions. The same methods for managing keys used in bitcoin can be used for this universal data store.
 
 6) Encapsulation. Because each data element has an address, any one breach can insulated from an attack on another
 
 7) Anonymity. Without a high-level key, no one element of data can be tied to any other. With this level of data anonymity, more data can be donated by users for use in various forms of data commons.
+
+8) A Universal set of Addresses. Anyone can send you information securely. Physician's office can send anyone with a wallet the information they are required to send.
 
