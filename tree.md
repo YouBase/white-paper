@@ -39,9 +39,11 @@ This scheme alleviates many problems with many current identity and security mec
 
 ## Collections
 
-As a children to the health profile level, part of the health branch we there will be a collections layer. The collections layer will define many different types of health data collections. An immunization record, a list of allergies, current and past medications could all be included as various collections.
+As a children to the health profile level, part of the health branch we there will be a collections layer. The collections layer will define many different types of health data collections. An immunization record is one example, with a list of allergies. Current and past medications could all be included as various collections.
 
 Our health collections are based on FHIR Resource Index, available here: http://www.hl7.org/implement/standards/fhir/resourcelist.html
+
+Storage of the data is not dependent on any collection schema, however. Schemas can be created on the fly, so this model could working to store info directly for users, and translated from one standard to another by other tools at a later date.
 
 
 
