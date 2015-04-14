@@ -17,8 +17,7 @@ The HDWallet contains a tree structure with extended keys such that each parent 
 
 At the first public/private key level of the hierarchy, just under the Master Key, BIP43 suggests using only one branch which will identify the purpose of the wallet. We propose using branch 42 to identify a personal data store. 
 
-## Segregating Identy from Personal Information in Profiles
-
+## Segregating Identy from Personal Information in Profiles (Could move to identity application)
 
 The next grandchild, or second layer below the master key layer will be designated as a profile layer. This is a hardened key layer meaning that children cannot be derived from the parent’s public key to protect profiles information from inadvertent loss of private keys. 
 
