@@ -21,9 +21,9 @@ Using the HD wallet structure allows for several benefits to be built into the d
 
 2) Structured access. A way to organize authorized access to information into a structured hierarchy. The hierarchical structure allows for entire branches below a node. Specific branches of the tree can also be used to provide information about versions of various standard definitions.
 
-3) Proven identity without storing 3rd party personal info. improved anonymous information sharing that could be used as a public or shared private asset 
+3) Proven identity without storing 3rd party personal info. improved anonymous information sharing that could be used as a public or shared private asset. 
 
-4) Blockchain available, but not dependent. information sharing transactions can be to be tied directly to a universal ledger as a public proof and/or as a financial transaction, but are not required to be.
+4) Blockchain available, but not dependent. Information sharing transactions can be to be tied directly to a universal ledger as a public proof and/or as a financial transaction, but are not required to be. Wallet can used solely as structured access to a data store, even though wallets are valid bitcoin accresses.
 
 5) Data transactions tied to financial transactions. The same methods for managing keys used in bitcoin can be used for this universal data store.
 
