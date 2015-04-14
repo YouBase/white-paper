@@ -5,3 +5,5 @@ YouBase’s goal, however, is to ensure individuals can maintain control over th
 
 The client application will send JSON to 
 
+We anticipate a network of non-cooperative entities which will act as servers for the storage network.
+
