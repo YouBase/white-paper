@@ -1,4 +1,4 @@
-# Schema
+# Profile Definition
 
 The collection layer of keys under a profile will define a schema. Schemas will be defined via JSON. Below is an example of a sample health profile definition:
 
@@ -35,7 +35,6 @@ The collection layer of keys under a profile will define a schema. Schemas will 
   ]
 }
 ```
-. 
 
 meta: timestamp
 attachments, files, sample time, steps or could be in a file. 
