@@ -1,4 +1,4 @@
 {
-  "gitbook": ">=2.0.0-alpha.9",
+  "gitbook": ">=2.0.0",
   "plugins": ["mermaid"]
 }
