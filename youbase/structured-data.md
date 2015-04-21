@@ -1,5 +1,17 @@
 # YouBase Tree
-The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet tree for the control of access to personal data stores. The use of an HD wallet offers several advantages, including:  1) allowing for control of read/write access to individual leaves and branches of a tree, 2) segregating identity profile information from other profile information, so information is trusted without relying on personal data, 3) the ability to designate specific branches as data stores for specific types of information and, therefore, the use of specific branches identify the purpose of the tree  4) the ability to tie payments to trusted information exchange. 5) loss of key means only losing information for that part of the tree, which can be quickly marked as "dead" and copied to address 6) rapid transfer of just about any type of data from one a party to another, a universal, secure email.
+The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet tree for the control of access to personal data stores. The use of an HD wallet offers several advantages, including:  
+
+1. Allowing for control of read/write access to individual leaves and branches of a tree.
+
+2. Segregating identity profile information from other profile information, so information is trusted without relying on personal data.
+
+3. The ability to designate specific branches as data stores for specific types of information and, therefore, the use of specific branches identify the purpose of the tree.
+
+4. The ability to tie payments to trusted information exchange. 
+
+5. Loss of key means only losing information for that part of the tree, which can be quickly marked as "dead" and copied to address.
+
+6. Rapid transfer of just about any type of data from one a party to another, a universal, secure email.
 
 ## Seeding and creating the HD Wallet
 
@@ -11,11 +23,13 @@ The client software will manage the tree of Private-Public keys of the HD wallet
 
 ## Structure
 
-(Insert graphic here)
-
 The HDWallet contains a tree structure with extended keys such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc.  An extended key consists of a private or public key and a chain code. Sharing an extended key gives (private or public) access to the entire branch. A useful application is that a user can provide an extended public key to a trusted source that can then write (deposit) information in that tree without having read access to other information in the branch.
 
 At the first public/private key level of the hierarchy, just under the Master Key, BIP43 suggests using only one branch which will identify the purpose of the wallet. We propose using branch 42 to identify a personal data store. 
+
+```mermaid
+{% include "../diagrams/structured-data.md" %}
+```
 
 ## Segregating Identy from Personal Information in Profiles (Could move to identity application)
 

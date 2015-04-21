@@ -1,0 +1,9 @@
+.mermaid .cluster {
+  fill: #fff;
+  stroke: #666;
+}
+
+.mermaid text, .mermaid .label {
+  font-family: 'serif';
+  font-size: 14px;
+}
