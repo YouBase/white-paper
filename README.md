@@ -33,3 +33,8 @@ Using the HD wallet structure allows for several benefits to be built into the d
 
 8) A Universal set of Addresses. Anyone can send you information securely. Physician's office can send anyone with a wallet the information they are required to send to fulfill requirements, for example.
 
+9) Private longitudinal tracking of everything. All transactions are timestamped, so all records can become a longitudinal record. 
+
+10) Security. By default encryption is built in. Share what you want, protect what you want.
+
+11) Personal data as a service. Have an API of one to share what you want with who you want.
