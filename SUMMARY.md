@@ -1,12 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Background](background/README.md)
-   * [Bitcoin](background/bitcoin.md)
-   * [BIP32](background/bip32.md)
-   * [IPFS](background/ipfs.md)
-   * [DHT](background/dht.md)
-   * [TOR](background/tor.md)
+* [Background](background.md)
 * [YouBase](youbase/README.md)
    * [Structured Data](youbase/structured-data.md)
    * [Profile Definitions](youbase/profile-definitions.md)
