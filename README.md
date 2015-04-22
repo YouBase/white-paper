@@ -2,11 +2,11 @@
 
 Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignements have led to enormous cost and risk associate with managing and securing personal records by third parties. 
 
-Breaches have become all-too-common because of the high value to identity thieves. A premium is paid on the black market for such records, estimated at $50 per record for medical records. In Q1 2015 alone, nearly 100 million medical record have been compromised, including identity, clinical and financial information. At the same time, a person's ability to access and manage personal information that rests with third parties is difficult.
+Breaches have become all-too-common because of the high value to identity thieves. A premium is paid on the black market for such records, estimated at $50 per record for medical records. In the US Q1 2015 alone, nearly 90 million medical record have been compromised, including identity, clinical and financial information. At the same time, a person's ability to access and manage personal information that rests with third parties is difficult.
 
 YouBase provides an individual-centric security structure that separates personal data from identity while allowing for secure and structured read and/or write access to trusted parties. This structure provides for several benefits, including: 1) a way to securely input, access and share any kind of file or record 2) a way to organize authorized access to information into a structured hierarchy 3) improved anonymous information sharing that could be used as a public or shared private asset 4) information sharing transactions can be to be tied directly to a financial transaction.
 
-Cryptography combined with distributed applications and databases in peer-to-peer networks provide the fundamental building blocks required for securing stores of individual-centered digital property and assets in an open standards-based manner. By using encryption, digital signatures, digital wallets and distributed data, ownership of digital information can be managed in a decentralized store. Such a store will be simultaneously secure and private, with strong identity services, yet available anywhere. 
+Cryptography combined with distributed applications and databases in peer-to-peer networks provide the fundamental building blocks required for securing stores of individual-centered digital property in an open standards-based manner. By using encryption, digital signatures, digital wallets and distributed data, ownership of digital information can be managed in a decentralized store. Such a store will be simultaneously secure and private, with strong identity services, yet ubiquitous and available anywhere. 
 
 This is a radical shift. In creating such systems, the opportunity exists to solve fundamental issues across B2B, B2C and C2C domains. These problems include 1) managing multiple accounts, identities and preferences, 2) creating trusted, verified identities, 3) linking these identities to a wide variety of attributes and data, such as medical records, social content, confidential documents, as well as authorizations and access to a variety benefits and shared resources. 
 
@@ -31,6 +31,12 @@ Using the HD wallet structure allows for several benefits to be built into the d
 
 7) Anonymity. Without a high-level key, no one element of data can be tied to any other. With this level of data anonymity, more data can be donated by users for use in various forms of data commons.
 
-8) A Universal set of Addresses. Anyone can send you information securely. Physician's office can send anyone with a wallet the information they are required to send to fulfill requirements, for example.
+8) A Universal set of Addresses. Anyone can send you information securely. Physician's office can send anyone with a wallet the information they are required to send to fulfill Meaningful Use requirements, for example.
+
+9) Private longitudinal tracking of everything. All transactions are timestamped, so all records can become a longitudinal record. 
+
+10) Security. By default encryption is built in. Share what you want, protect what you want.
+
+11) Personal data as a service. Have an API of one to share what you want with who you want.
 
 {% include "SUMMARy.md" %}
