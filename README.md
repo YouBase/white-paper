@@ -33,3 +33,4 @@ Using the HD wallet structure allows for several benefits to be built into the d
 
 8) A Universal set of Addresses. Anyone can send you information securely. Physician's office can send anyone with a wallet the information they are required to send to fulfill requirements, for example.
 
+{% include "SUMMARy.md" %}
