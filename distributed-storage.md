@@ -17,8 +17,8 @@ We anticipate a network of non-cooperative entities which will act as servers fo
 
 ## Storing Records
 
-![Storage Diagram](../diagrams/storage-sequence.png)
+![Storage Diagram](./diagrams/storage-sequence.png)
 
 ## Retriving Records
 
-![Retrieval Diagram](../diagrams/retrieval-sequence.png)
+![Retrieval Diagram](./diagrams/retrieval-sequence.png)
