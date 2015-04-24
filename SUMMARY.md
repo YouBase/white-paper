@@ -17,4 +17,5 @@
    * [Social](applications/social.md)
 * [Conclusion](conclusion.md)
 * [References](references.md)
-
+* [Diagrams](diagrams/README.md)
+	* [Bip32](diagrams/bip32.md)

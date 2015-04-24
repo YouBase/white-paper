@@ -13,6 +13,12 @@ The client software will manage the tree of Private-Public keys of the HD wallet
 
 (Insert graphic here)
 
+```mermaid
+graph TD
+
+m(m)---(m/1)
+```
+
 The HDWallet contains a tree structure with extended keys such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc.  An extended key consists of a private or public key and a chain code. Sharing an extended key gives (private or public) access to the entire branch. A useful application is that a user can provide an extended public key to a trusted source that can then write (deposit) information in that tree without having read access to other information in the branch.
 
 At the first public/private key level of the hierarchy, just under the Master Key, BIP43 suggests using only one branch which will identify the purpose of the wallet. We propose using branch 42 to identify a personal data store. 
