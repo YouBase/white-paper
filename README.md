@@ -38,4 +38,4 @@ Using the HD Wallet structure allows for several benefits to be built into the d
 
 11. Personal data as a service. Have an API to share what you want with who you want.
 
-{% include "SUMMARy.md" %}
+{% include "./SUMMARY.md" %}
