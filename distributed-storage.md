@@ -12,7 +12,7 @@ We anticipate a network of non-cooperative entities which will act as servers fo
 ## DataStore
 
 ```mermaid
-{% include "diagrams/distributed-storage.md" %}
+{% include "./diagrams/distributed-storage.md" %}
 ```
 
 ## Storing Records

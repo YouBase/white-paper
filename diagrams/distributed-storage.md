@@ -1,4 +1,3 @@
-```mermaid
 graph TB
 
 subgraph Record
@@ -38,4 +37,3 @@ end
 payloadHash-->payloadHashes
 
 payloads-->payloadHash
-```
