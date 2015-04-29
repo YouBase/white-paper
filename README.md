@@ -24,7 +24,7 @@ Using the HD Wallet structure allows for several benefits to be built into the d
 
 4. Blockchain available, but not dependent. Information sharing transactions can be tied directly to a universal ledger as a public proof and/or as a financial transaction, but are not required to be. Wallets can be used solely as structured access to a data store, even though wallets are valid bitcoin addresses.
 
-5. Data transactions tied to financial transactions. The same methods for managing keys used in bitcoin can be used for this universal data store.
+5. Data transactions tied to financial transactions. The same methods for managing keys used in bitcoin can be used for this universal data store, and tied to a financial transaction.
 
 6. Encapsulation. Because each data element has a unique address, any one breach is insulated from an attack on another
 
