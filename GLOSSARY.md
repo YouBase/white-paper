@@ -9,8 +9,7 @@ remember words -- for the generation of deterministic wallets.
 
 # BIP43
 
-This BIP introduces a "Purpose Field" for use in deterministic wallets based on
-algorithm described in BIP32.
+This BIP introduces a "Purpose Field" for use in deterministic wallets based on algorithm described in BIP32.
 
 # Bitcoin
 

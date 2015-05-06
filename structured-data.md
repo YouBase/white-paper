@@ -1,6 +1,6 @@
 # Structured Data
 
-The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet or "HD Wallet" tree for the control of access to personal data stores. 
+The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet or "HD Wallet" tree for the control of access to personal data stores.
 
 The HD Wallet contains a tree structure with extended keys such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc. An extended key consists of a private or public key and a chain code. Sharing an extended key gives (private or public) access to the entire branch. A useful application is that a user can provide an extended private key to a trusted source that can then write (deposit) information in that tree without having read access to other information in the branch.
 
@@ -10,7 +10,7 @@ Secondly, rights to different parts of the tree have permissions structured such
 
 Finally, HD Wallets can create sequences of public keys without having access to the private keys, so that read-only or receive-only permission can be granted less secure environments without risking access to the private keys. From the outside (with access to a public key), there is no indication that the key is part of any larger structure. It becomes a bitcoin address like any other.
 
-The use of an HD Wallet offers several advantages, including:  
+The use of an HD Wallet offers several advantages, including:
 
 1. Allowing for control of read/write access to individual leaves and branches of a tree.
 
@@ -18,7 +18,7 @@ The use of an HD Wallet offers several advantages, including:
 
 3. The ability to designate specific branches as data stores for specific types of information.
 
-4. The ability to tie payments to trusted information exchange. 
+4. The ability to tie payments to trusted information exchange.
 
 5. Loss of key means only losing information for that part of the tree, which can be quickly marked as "dead" and copied to another address.
 
@@ -46,11 +46,11 @@ The path follows standard BIP32 notation where 'm' represents the master node an
 
 ### purpose'
 
-BIP43 recommends the use of a hardended purpose code to indicate the specification used by that subtree. We propose using branch 42' to identify a personal data store. All nodes under the specified purpose code should conform to the YouBase standard and will indicate to wallet software what to expect. 
+BIP43 recommends the use of a hardended purpose code to indicate the specification used by that subtree. We propose using branch 42' to identify a personal data store. All nodes under the specified purpose code should conform to the YouBase standard and will indicate to wallet software what to expect.
 
 ### profile'
 
-The profile level is also hardened and is used to define the structure of the nodes under it. Each profile record points to a Profile Definition which the client uses to build the interface and interpret meaning of records. Profile Definitions are covered in detail in the next chapter. Some example profiles would be a health profile, identity profile, and social profile.  
+The profile level is also hardened and is used to define the structure of the nodes under it. Each profile record points to a Profile Definition which the client uses to build the interface and interpret meaning of records. Profile Definitions are covered in detail in the next chapter. Some example profiles would be a health profile, identity profile, and social profile.
 
 A YouBase wallet can have multiple profiles of the same type. A person may have multiple social profiles for example, one for each social group they are a part of. This allows you to grant different levels of access to different people depending on the context you define. Since each profile is hardened and on an isolated branch of the tree there is no way to know they are related without the owner of the profiles permission.
 
