@@ -4,9 +4,7 @@ By using an HD Wallet to hold the structure of our data it's storage is made muc
 
 In YouBase the distributed storage is made of three main components, the BIP32 Node being stored, a signed JSON document, and storage for linked data. The following diagram illustrates how each interacts with the other.  
 
-```mermaid
-{% include "diagrams/distributed-storage.md" %}
-```
+![Distributed Storage](/diagrams/distributed-storage.png)
 
 ## BIP-32 Node
 

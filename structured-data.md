@@ -43,9 +43,7 @@ The path follows standard BIP32 notation where 'm' represents the master node
 and an apostrophe indicates a hardened node. An example tree might look like the
 following diagram.
 
-```mermaid
-{% include "diagrams/structured-data.md" %}
-```
+![Distributed Storage](/diagrams/distributed-storage.png)
 
 ### purpose'
 
