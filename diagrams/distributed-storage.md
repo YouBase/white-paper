@@ -1,39 +1,38 @@
 graph TB
 
-subgraph Record
+subgraph BIP-32 Node
   publicKey(Public Key)
   privateKey(Private Key)
-  metadata(Metadata)
-  attachments(Attachments)
-  data(Record Data)
+  data(Data)
+  links(Links)
 end
 
-data-->payloads
-attachments-->payloads
+links-->linksJSON
 
-subgraph MetaStore
-  publicKeyHash(PublicKey Hash - Address)
+subgraph Document
+  address(ID - Address)
   signature(Signature)
-  metadataJSON(Metadata JSON)
-  payloadHashes(Payload Hashes)
-  recordHash(Record Hash)
+  dataJSON(Data)
+  linksJSON(Links)
+  documentHash(Revision - Document Hash)
 end
 
-publicKey-->publicKeyHash
+publicKey-->address
 
-metadata-->metadataJSON
+data-->dataJSON
 
-metadataJSON-->recordHash
-payloadHashes-->recordHash
+dataJSON-->documentHash
+linksJSON-->documentHash
 
 privateKey-->signature
-recordHash-->signature
+documentHash-->signature
 
-subgraph DataStore
-  payloads(Record Payloads)
-  payloadHash(Payload Hash)
+subgraph Link Storage
+  linkHash(Hashed Link Data)
+  linkData(Linked Data)
 end
 
-payloadHash-->payloadHashes
+linkData-->linkHash
 
-payloads-->payloadHash
+linkHash-->links
+linkHash-->linksJSON

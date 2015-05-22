@@ -2,7 +2,7 @@
 
 The core of the YouBase solution is in a BIP32 hierarchical deterministic wallet or "HD Wallet" tree for the control of access to personal data stores.
 
-The HD Wallet contains a tree structure with extended keys such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc. An extended key consists of a private or public key and a chain code. Sharing an extended key gives (private or public) access to the entire branch. A useful application is that a user can provide an extended private key to a trusted source that can then write (deposit) information in that tree without having read access to other information in the branch.
+The HD Wallet contains a tree structure with extended keys such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc. An extended key consists of a private or public key and a chain code.  Sharing an extended key gives (private or public) access to the entire branch. A useful application is that a user can provide an extended private key to a trusted source that can then write (deposit) information in that branch of the tree without having access to information in other branches.
 
 Providing public/private key pairings in such a structure offer a number of beneifts. First, information secured in wallets with the keys can follow a pre-specified structure where different kinds of information are stored in different branches of the tree.
 
@@ -20,7 +20,7 @@ The use of an HD Wallet offers several advantages, including:
 
 4. The ability to tie payments to trusted information exchange.
 
-5. Loss of key means only losing information for that part of the tree, which can be quickly marked as "dead" and copied to another address.
+5. A compromised key means only information in that part of the tree is compromised, which can be quickly marked as "dead" and copied to another address.
 
 6. Rapid transfer of just about any type of data from one a party to another, a universal, secure email.
 
@@ -30,6 +30,7 @@ HD wallets are created from a root seed, meaning they can be backed up, restored
 
 The client software will manage the HD Wallet, including the encrypted seed and top-level master key pair. This client software could exist on the web, smartphone or on a local computer. Depending on where the client lives wallet access can be grantied via pin code, biometrics, or other means.
 
+
 ## Path levels
 
 YouBase follows the recommendations in BIP43 and defines the following levels in a BIP32 path:
@@ -38,7 +39,9 @@ YouBase follows the recommendations in BIP43 and defines the following levels in
   m / purpose' / profile' / collection / record
 ```
 
-The path follows standard BIP32 notation where 'm' represents the master node and an apostrophe indicates a hardened node. An example tree might look like the following with a detailed explanation of each level following.
+The path follows standard BIP32 notation where 'm' represents the master node
+and an apostrophe indicates a hardened node. An example tree might look like the
+following diagram.
 
 ```mermaid
 {% include "diagrams/structured-data.md" %}
@@ -46,11 +49,11 @@ The path follows standard BIP32 notation where 'm' represents the master node an
 
 ### purpose'
 
-BIP43 recommends the use of a hardended purpose code to indicate the specification used by that subtree. We propose using branch 42' to identify a personal data store. All nodes under the specified purpose code should conform to the YouBase standard and will indicate to wallet software what to expect.
+BIP43 recommends the use of a hardended purpose code to indicate the specification used by that subtree. We propose using branch 46' to identify a personal data store. All nodes under the specified purpose code should conform to the YouBase standard and will indicate to wallet software what to expect.
 
 ### profile'
 
-The profile level is also hardened and is used to define the structure of the nodes under it. Each profile record points to a Profile Definition which the client uses to build the interface and interpret meaning of records. Profile Definitions are covered in detail in the next chapter. Some example profiles would be a health profile, identity profile, and social profile.
+The profile level is also hardened and is used to define the structure of the nodes under it. Profile nodes point to a profile definition which the client uses to build the interface and interpret meaning of collections and records. Profile definitions are covered in detail in the next chapter. Some example profiles would be a health profile, identity profile, and social profile.
 
 A YouBase wallet can have multiple profiles of the same type. A person may have multiple social profiles for example, one for each social group they are a part of. This allows you to grant different levels of access to different people depending on the context you define. Since each profile is hardened and on an isolated branch of the tree there is no way to know they are related without the owner of the profiles permission.
 
@@ -58,10 +61,10 @@ Although stored and accessed completely separately the client software may group
 
 ### collection
 
-Collections are specified in the Profile Definition of the collections parent node (profile) and are used to hold groups of similiar records. In the previous diagram we used a health profile which defines an allergies collection and an immunizations collection. Since new profile types can be easily created the collections are not limited to any one standard.
+Collections are specified in the profile definition of the collections parent node (profile) and are used to hold groups of similiar records. In the previous diagram we used a health profile which defines an allergies collection and an immunizations collection. Since new profile types can be easily created the collections are not limited to any one standard.
 
 ### record
 
-The record is the base unit of storage in YouBase. The format of these records is als specified in the Profile Definition and are defined using [JSON Schema](http://json-schema.org). This allows clients and other services with a way to read and validate a record without restricting profiles to using a single format.
+The record is the base unit of storage in YouBase. The format of these records is also specified in the profile definition and are defined using [JSON Schema](http://json-schema.org). This allows clients and other services with a way to read and validate a record without restricting profiles to using a single format.
 
-In the current centralized world each service will often store user information in slightly different ways. By creating a Profile Definition that matches an existing service we can ease integration with it while giving YouBase clients a way to understand the information.
+In the current centralized world each service will often store user information in slightly different ways. By creating a profile definition that matches an existing service we can ease integration with it while giving YouBase clients a way to understand the information.
