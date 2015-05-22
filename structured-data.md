@@ -43,7 +43,7 @@ The path follows standard BIP32 notation where 'm' represents the master node
 and an apostrophe indicates a hardened node. An example tree might look like the
 following diagram.
 
-![Distributed Storage](/diagrams/distributed-storage.png)
+![Structured Data](/diagrams/structured-data.png)
 
 ### purpose'
 
