@@ -2,7 +2,7 @@
 
 By *Josh Robinson* & *Leonard Kish*
 
-Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignements have led to enormous cost and risk associate with managing and securing personal records by third parties.
+Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignements have led to enormous cost and risk associated with managing and securing personal records by third parties.
 
 YouBase provides an individual-centric security structure that separates personal data from identity while allowing for secure and structured read and/or write access to trusted parties on a peer to peer data store. This structure provides for several benefits, including:
 
