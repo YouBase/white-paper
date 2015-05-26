@@ -1,10 +1,10 @@
 # YouBase (Draft 1)
 
-## Using BIP32 public-private key pair trees to build and manage a secure personal data store on a distributed public network
-
 By *Josh Robinson* & *Leonard Kish*
 
-Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignments have led to enormous cost and risk associated with managing and securing personal records by third parties.
+#### Abstract
+
+  > Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignments have led to enormous cost and risk associated with managing and securing personal records by third parties. YouBase provides a solution to these challenges by using BIP32 public-private key pair trees to build and manage a secure personal data store on a distributed public network
 
 YouBase provides an individual-centric security structure that separates personal data from identity while allowing for secure and structured read and/or write access to trusted parties on a peer to peer data store. This structure provides several benefits, including:
 
@@ -17,4 +17,4 @@ Cryptography combined with distributed applications and databases in peer-to-pee
 
 This is a radical shift. In creating such systems, the opportunity exists to solve fundamental issues across B2B, B2C and C2C domains; problems such as managing multiple accounts, identities and preferences; creating trusted, verified identities; linking these identities to a wide variety of attributes and data such as medical records, social content, and confidential documents; as well as authorizations and access to a variety of benefits and shared resources.
 
-Information and rights to that information will ideally follow an individual as she moves through various contexts in her daily life, allowing the ability to authorize trusted, verified identities with read and write access to this information within those contexts. A longitudinal record could be created, including consumer-generated application data, with the individual as the primary controller of access -- all independent of a third party.
+Information and rights to that information will ideally follow an individual as she moves through various contexts in her daily life, allowing the ability to authorize trusted, verified identities with read and write access to this information within those contexts. A longitudinal record could be created, including consumer-generated application data, with the individual as the primary controller of access - all independent of a third party.
