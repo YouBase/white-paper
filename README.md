@@ -1,10 +1,10 @@
 # YouBase (Draft 1)
 
-## Using BIP32 public-private key pair trees to build and manage a secure personal data store on a distributed public network
-
 By *Josh Robinson* & *Leonard Kish*
 
-Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignments have led to enormous cost and risk associated with managing and securing personal records by third parties.
+#### Abstract
+
+  > Security, privacy, identity authentication and accessibility have historically been difficult to balance. Using personal information as part of identity and authentication for secure access creates difficulties keeping this information private. These misalignments have led to enormous cost and risk associated with managing and securing personal records by third parties. YouBase provides a solution to these challenges by using BIP32 public-private key pair trees to build and manage a secure personal data store on a distributed public network
 
 YouBase provides an individual-centric security structure that separates personal data from identity while allowing for secure and structured read and/or write access to trusted parties on a peer to peer data store. This structure provides several benefits, including:
 
