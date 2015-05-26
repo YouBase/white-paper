@@ -30,7 +30,7 @@ There have been a number of widely-known problems in health IT that an individua
 
 **Access**. At the same time, a person's ability to access and manage personal information that rests with third parties is difficult, recently leading to the recent #NoMUWithoutME and getmyhealthdata.org campaigns. We believe each person should have a private, universal and secure container that belongs to the patient and serves as reference for health care stakeholders.
 
-**Interoperability**. With a single source for data, shared as needed and controlled by the patient, independent of data types, we will have a universal store connected via YouBase patient platform. Data within the store could be translated between the various proviles. UnPatient is data agnostic. Any kind of data profile can be accepted and defined in the schema.
+**Interoperability**. With a single source for data, shared as needed and controlled by the patient, independent of data types, we will have a universal store connected via YouBase patient platform. Data within the store could be translated between the various proviles. YouBase is data agnostic. Any kind of data profile can be accepted and defined in the schema.
 
 **Connecting consumer-generated data, clinical data and claims data.** Consumers can directly connect their clinical and claims data, or donate them to an organization to receive an incentive or voucher.
 
@@ -48,7 +48,7 @@ Using digital signatures, we envision the ability for each participant in the he
 
 For example,
 Mr. User could enter a lab, show that his identity matches with a tradtional ID or, simply present his
-UnPatient token that has already been signed. The public key token is then verified as belonging to Mr. User. The phlebotomist takes his blood sample, notes the date/time, and the sample is then permanently associated with the Mr. U's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's UnPatient wallet and can only be opened/viewed by the token/secure-key.
+YouBase token that has already been signed. The public key token is then verified as belonging to Mr. User. The phlebotomist takes his blood sample, notes the date/time, and the sample is then permanently associated with the Mr. U's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
 
 This could work for any kind health care transaction, creating validated identity and a universal set of address to which patient information could be signed. Using this kind of a system we expect will also improve data quality as each data entry will require a digital signature linked to the person who entered the information.
 
