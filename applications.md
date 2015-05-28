@@ -48,7 +48,7 @@ Using digital signatures, YouBase will allow for each participant in a health ca
 
 For example,
 A user would enter a lab, show that his identity matches with a traditional ID or, simply present his
-YouBase token that has already been signed. The public key token is then verified as belonging to the user. The phlebotomist takes his blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
+YouBase token that has already been signed. The public key token is then verified as belonging to the user and documented in the system. The phlebotomist takes a blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
 
 This could be applied to many health care transactions, creating validated identity and a universal set of address to which patient information could be signed. Using this kind of a system we expect will also improve data quality as each data entry will require a digital signature linked to the person who entered the information.
 
