@@ -118,4 +118,4 @@ To ensure a document is valid it must include a signature of the document hash b
 
 ## Link Storage - Content Addressable Data Store
 
-As mentioned in the links section the link storage is a key value store where the lookup key is a hash of the contents. This can be as simple as a file saved to the local filesystem where the file name is a hash of the file contents. It could use proprietary cloud solutions like S3 where, again, the file name is a hash of the contents. However IPFS is the most logical choice for YouBase to use at this time as IPFS fullfills current requirements for a distributed store not controlled by any single 3rd party.
+As mentioned in the links section, the link storage is a key value store where the lookup key is a hash of the contents. This can be as simple as a file saved to the local filesystem, where the file name is a hash of the file content or a proprietary cloud solutions like S3 where, again, the file name is a hash of the contents. However IPFS is the most logical choice for YouBase at this time as IPFS fullfills current requirements for a distributed store, independent of any 3rd party.
