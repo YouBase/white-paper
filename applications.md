@@ -34,21 +34,21 @@ There have been a number of widely-known problems in health IT that an individua
 
 **Connecting consumer-generated data, clinical data and claims data.** Consumers can directly connect their clinical and claims data, or donate them to an organization to receive an incentive or voucher.
 
-**Research**. Consumers can annonymously donate their data.
+**Research**. Consumers can annonymously donate their *validated* data with a minimal metadata or personal information.
 
-**Identification at point of care**. As described in the use case below, YouBase will be able to provide identity at the point of care, while maintaining privacy.
+**Identification at point of care**. YouBase will be able to provide identity at the point of care, while maintaining privacy.
 
-**Sending records from provider to patient**. A set of universal addresses will allow for secure transmission of a patient record.
+**Sending records from provider to patient**. A set of universal addresses will allow for secure transmission of a patient record, simply by scanning an public address for which the health care provider has a private key.
 
 These are just a few examples. Our goal here is not to identify every use for the YouBase, platform, only to provide a starting point to consider a new way for managing health information around trusted identity and privacy.
 
 Use case:
 
-Using digital signatures, we envision the ability for each participant in the health care system to have a YouBase store that will allow each to verify their identity, have the identity signed as valid, then attach a health measurement or record to that identity. This would, in large part, forgo the need for patient identifiers. YouBase wallets would act to validate an identity.
+Using digital signatures, YouBase will allow for each participant in a health care transaction to have a YouBase store that will allow each to verify their identity, have the identity signed as valid, then attach a health measurement or record to that identity.  YouBase wallets would act to validate an identity, and the keys would server as both a unique ID and a data address.
 
 For example,
-Mr. User could enter a lab, show that his identity matches with a traditional ID or, simply present his
-YouBase token that has already been signed. The public key token is then verified as belonging to Mr. User. The phlebotomist takes his blood sample, notes the date/time, and the sample is then permanently associated with the Mr. U's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
+A user would enter a lab, show that his identity matches with a traditional ID or, simply present his
+YouBase token that has already been signed. The public key token is then verified as belonging to the user. The phlebotomist takes his blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
 
 This could be applied to many health care transactions, creating validated identity and a universal set of address to which patient information could be signed. Using this kind of a system we expect will also improve data quality as each data entry will require a digital signature linked to the person who entered the information.
 
