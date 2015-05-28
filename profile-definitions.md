@@ -36,7 +36,7 @@ A profile's collections are defined as an array of collection objects, each havi
 
 ### Schema
 
-The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. It includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as apposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' since we expect every record to be an object. This makes the sure the schema works with JSON Schema validators.
+The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. It includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as apposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' since we expect every record to be an object. This makes sure the schema works with JSON Schema validators.
 
 ```json
 {
