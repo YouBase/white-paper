@@ -88,7 +88,7 @@ As it is not possible to tell if a field is encrypted or just random data this i
 
 #### Encrypted
 
-Properties listed in the encrypted field are similar to those in the hardened field but they are encrypted using the public key of the records node. This means they can only be decrypted by someone with the private key for that records node and limits access to someone with write access. Just like the hardened field encrypted properties cannot be validated and must be strings.  
+Properties listed in the encrypted field are similar to those in the hardened field but they are encrypted using the public key of the records node. This means they can only be decrypted by someone with the private key for that records node and limits access to someone with write access. Just as with the hardened field, encrypted properties cannot be validated and must be strings.  
 
 ### Form
 
