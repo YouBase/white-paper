@@ -20,15 +20,15 @@ As each node in a profile is a fully functional bitcoin addresss money can be se
 
 Sharing content can become . With larger files being linked to in a content addressable data store when a person reposts content it simply points to the file already in the data store. This happens any time the content is the same, even if two people upload the same file separately.
 
-With each person owning their data instead of the social network owning it, they would be able to take the same profile and available for use on multiple social networks. They would be able to tryout the latest service without having to start from scratch and loose their entire history.
+With each person owning their data instead of the social network owning it, they would be able to take the same profile and available for use on multiple social networks. They would be able to tryout the latest service without having to start from scratch and lose their entire history.
 
 ## Healthcare
 
-There have been a number of widely-known problems in health IT that an individual-centric solution could alleviate from data breaches, patient access to their data, patient IDs and more.
+There are a number of widely-known problems in health IT that an individual-centric data store could help solve.
 
-**Security** Breaches in health care have become all-too-common because of the high value to identity thieves. A premium is paid on the black market for such records, estimated at $50 per record. In the US Q1 2015 alone, nearly 90 million medical record have been compromised, including identity, clinical and financial information. At least part of the problem is misaligned incentives between third parties and patients. Providing a repository of data independent of a 3rd party, can provide a framework where personal data is provided on a subscription basis, rather than stored in multiple locations by multiple 3rd parties.
+**Security** Breaches in health care have become all-too-common because of the high value to identity thieves. A premium is paid on the black market for such records, estimated at $50 per record. In the US Q1 2015 alone, nearly 90 million medical records have been compromised, including identity, clinical and financial information. At least part of the problem is misaligned incentives between third parties and patients. Providing a repository of data independent of a 3rd party, can provide a framework where personal data is provided on a subscription basis, rather than stored in multiple locations by multiple 3rd parties.
 
-**Access**. At the same time, a person's ability to access and manage personal information that rests with third parties is difficult, recently leading to the recent #NoMUWithoutME and getmyhealthdata.org campaigns. We believe each person should have a private, universal and secure container that belongs to the patient and serves as reference for health care stakeholders.
+**Access**. At the same time, a person's ability to access and manage personal information currently resting with third parties is difficult, recently leading to the recent #NoMUWithoutME and getmyhealthdata.org campaigns. Ideally, each person will have a private, universal and secure container that belongs to the patient and serves as reference for health care stakeholders.
 
 **Interoperability**. With a single source for data, shared as needed and controlled by the patient, independent of data types, we will have a universal store connected via YouBase patient platform. Data within the store could be translated between the various proviles. YouBase is data agnostic. Any kind of data profile can be accepted and defined in the schema.
 
@@ -46,9 +46,7 @@ Use case:
 
 Using digital signatures, YouBase will allow for each participant in a health care transaction to have a YouBase store that will allow each to verify their identity, have the identity signed as valid, then attach a health measurement or record to that identity.  YouBase wallets would act to validate an identity, and the keys would server as both a unique ID and a data address.
 
-For example,
-A user would enter a lab, show that his identity matches with a traditional ID or, simply present his
-YouBase token that has already been signed. The public key token is then verified as belonging to the user and documented in the system. The phlebotomist takes a blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
+For example, a user would enter a lab, show that his identity matches with a traditional ID or, simply present his YouBase token that has been signed. The public key token is then verified as belonging to the user and documented in the system. The phlebotomist takes a blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
 
 This could be applied to many health care transactions, creating validated identity and a universal set of address to which patient information could be signed. Using this kind of a system we expect will also improve data quality as each data entry will require a digital signature linked to the person who entered the information.
 
