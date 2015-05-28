@@ -18,10 +18,10 @@ Using the HD Wallet to access a personal data store provides multiple benefits:
 
 8. A universal set of addresses. Using a public-private key hierarchy for data access provides for a universal address to read or write information based on an individual’s HD Wallet. A physician's office could send secure patient information to fulfill Meaningful Use requirements, for example.
 
-9. Private longitudinal tracking of everything. All transactions are timestamped, so all records can become a longitudinal record.
+9. Private longitudinal tracking. All transactions are time-stamped, so all records can become a longitudinal record.
 
 10. Security. Encryption by default. 
 
-11. Personal data as a service. Have an API to share what you want with whom you want.
+11. Personal data as a service. Opens the door to have an API to share what you want with whom you want.
 
 
