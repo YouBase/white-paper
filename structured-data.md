@@ -57,7 +57,7 @@ Although stored and accessed completely separately the client software may group
 
 ### collection
 
-Collections are specified in the profile definition of the collection's parent node (profile) and are used to hold groups of similar records. In the previous diagram we used a health profile which defines an allergies collection and an immunizations collection. Since new profile types can be easily created the collections are not limited to any one standard.
+Collections are specified in the profile definition of the collection's parent node (profile) and are used to hold groups of similar records. In the previous diagram we used a health profile which defines an allergies collection and an immunization collection. Since new profile types can be easily created the collections are not limited to any one standard.
 
 ### record
 
