@@ -84,7 +84,7 @@ The required field, also part of the JSON Schema standard, is a simple array ind
 
 The hardened field is an extension to JSON Schema that is an array of property keys similar to the required field. Each property listed will be encrypted using the extended public key as the decryption key. This means the property will be unreadable by itself but can be decrypted when accessed as part of a tree.
 
-Since it is not possible to tell if a field is encrypted or just random data this is not checked by validators. Instead clients use the hardened field to know which properties it should expect to be encrypted. It should also only reference properties that are of type 'string' instead of complex objects.
+As it is not possible to tell if a field is encrypted or just random data this is not checked by validators. Instead clients use the hardened field to know which properties it should expect are encrypted. It should also only reference properties that are of type 'string' instead of complex objects.
 
 #### Encrypted
 
