@@ -14,7 +14,7 @@ At the top level, the profile definition only includes a title, type, and an arr
 
 ## Collections
 
-A profile's collections are defined as an array of collection objects, each having a title, type, schema, and form. A collection object's position in the array determines what branch it maps to under a profile. In a collection the type field is used to describe the collections records in a consistent manner. This allows competing standards to create profiles that have a shared vocabulary. As with the profile type this will be very industry specific and will be defined separately.
+A profile's collections are defined as an array of collection objects, each having a title, type, schema, and form. A collection object's position in the array determines what branch it maps to under a profile. In a collection, the type field is used to describe the collections records in a consistent manner. This allows competing standards to create profiles that have a shared vocabulary. As with the profile type this will be very industry specific and will be defined separately.
 
 ```json
 {
