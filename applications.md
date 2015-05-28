@@ -28,27 +28,27 @@ There are a number of widely-known problems in health IT that an individual-cent
 
 **Security** Breaches in health care have become all-too-common because of the high value to identity thieves. A premium is paid on the black market for such records, estimated at $50 per record. In the US Q1 2015 alone, nearly 90 million medical records have been compromised, including identity, clinical and financial information. At least part of the problem is misaligned incentives between third parties and patients. Providing a repository of data independent of a 3rd party, can provide a framework where personal data is provided on a subscription basis, rather than stored in multiple locations by multiple 3rd parties.
 
-**Access**. At the same time, a person's ability to access and manage personal information currently resting with third parties is difficult, recently leading to the recent #NoMUWithoutME and getmyhealthdata.org campaigns. Ideally, each person will have a private, universal and secure container that belongs to the patient and serves as reference for health care stakeholders.
+**Access**. At the same time, a person's ability to access and manage personal information currently resting with third parties is difficult, recently leading to the #NoMUWithoutME and getmyhealthdata.org campaigns. Ideally, each person will have a private, universal and secure container that belongs to the individual or patient and serves as reference for health care stakeholders.
 
-**Interoperability**. With a single source for data, shared as needed and controlled by the patient, independent of data types, we will have a universal store connected via YouBase patient platform. Data within the store could be translated between the various proviles. YouBase is data agnostic. Any kind of data profile can be accepted and defined in the schema.
+**Interoperability**. With a single source for data, shared as needed and controlled by the patient, independent of data types, we will have a universal store connected via YouBase patient platform. Data within the store could be translated between the various profiles. YouBase is data agnostic. Any kind of data profile can be accepted and defined in the schema.
 
-**Connecting consumer-generated data, clinical data and claims data.** Consumers can directly connect their clinical and claims data, or donate them to an organization to receive an incentive or voucher.
+**Connecting consumer-generated data, clinical data and claims data.** Consumers can have a single container to directly connect their validated clinical and claims data, or donate this validated information to an external party.
 
-**Research**. Consumers can annonymously donate their *validated* data with a minimal metadata or personal information.
+**Research**. Consumers can anonymously donate their *validated* data with a minimal metadata or personal information.
 
-**Identification at point of care**. YouBase will be able to provide identity at the point of care, while maintaining privacy.
+**Identification at point of care**. YouBase will be able to provide validated identity at the point of care, while maintaining privacy.
 
 **Sending records from provider to patient**. A set of universal addresses will allow for secure transmission of a patient record, simply by scanning an public address for which the health care provider has a private key.
 
-These are just a few examples. Our goal here is not to identify every use for the YouBase, platform, only to provide a starting point to consider a new way for managing health information around trusted identity and privacy.
+These are just a few examples. Our goal here is not to identify every use for the YouBase platform, only to provide a starting point to consider a new way for managing health information around trusted identity and privacy.
 
 Use case:
 
 Using digital signatures, YouBase will allow for each participant in a health care transaction to have a YouBase store that will allow each to verify their identity, have the identity signed as valid, then attach a health measurement or record to that identity.  YouBase wallets would act to validate an identity, and the keys would server as both a unique ID and a data address.
 
-For example, a user would enter a lab, show that his identity matches with a traditional ID or, simply present his YouBase token that has been signed. The public key token is then verified as belonging to the user and documented in the system. The phlebotomist takes a blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to Mr. User's YouBase wallet and can only be opened/viewed by the token/secure-key.
+For example, a user would enter a lab, show that his identity matches with a traditional ID or, simply present his YouBase token that has been signed. The public key token is then verified as belonging to the user and documented in the system. The phlebotomist takes a blood sample, notes the date/time, and the sample is then permanently associated with the user's token/private-key. The sample is processed using the lab's existing system. The results (data) are sent to user's YouBase wallet and can only be opened/viewed by the token/secure-key.
 
-This could be applied to many health care transactions, creating validated identity and a universal set of address to which patient information could be signed. Using this kind of a system we expect will also improve data quality as each data entry will require a digital signature linked to the person who entered the information.
+This could be applied to many health care transactions, creating validated identity and a universal set of addresses to which patient information could be signed. Using this kind of a system we expect will also improve data quality as each data entry will require a digital signature linked to the person who entered the information.
 
 
 
