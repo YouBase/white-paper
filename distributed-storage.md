@@ -28,11 +28,11 @@ The document is stored in a DHT where the lookup key is an address generated fro
 
 ### ID - Address
 
-The documents id is an address generated from the public key and is a valid bitcoin address. It is used as the lookup key but also included in the saved document to make syncing and validation easier.
+The document's id is an address generated from the public key and is a valid bitcoin address. It is used as the lookup key but also included in the saved document to make syncing and validating easier.
 
 ### Data
 
-The data field is the meat of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and most importantly the actual information you want to store. The data field will follow a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
+The data field is the meat of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field will follow a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
 
 ```json
   {
