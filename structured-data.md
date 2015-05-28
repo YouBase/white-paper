@@ -53,7 +53,7 @@ The profile level is also hardened and is used to define the structure of the no
 
 A YouBase wallet can have multiple profiles of the same type. A person may have multiple social profiles for example, one for each social group they are a part of. This allows you to grant different levels of access to different people depending on the context you define. Since each profile is hardened and on an isolated branch of the tree there is no way to know they are related without the owner of the profile's permission.
 
-Although stored and accessed completely separately the client software may group together, or combine, related profiles. This will only be visible to the owner of the profiles and should only be done when it improves the users experience.
+Although stored and accessed completely separately the client software may group together, or combine, related profiles. This will only be visible to the owner of the profiles and should only be done when it improves the user's experience.
 
 ### collection
 
