@@ -14,7 +14,7 @@ At the top level, the profile definition only includes a title, type, and an arr
 
 ## Collections
 
-A profile's collections are defined as an array of collection objects, each having a title, type, schema, and form. A collection object's position in the array determines what branch it maps to under a profile. In a collection, the type field is used to describe the collections records in a consistent manner. This allows competing standards to create profiles that have a shared vocabulary. As with the profile type this will be very industry specific and will be defined separately.
+A profile's collections are defined as an array of collection objects, each having a title, type, schema, and form. A collection object's position in the array determines what branch it maps to under a profile. In a collection, the type field is used to describe the collections records in a consistent manner. This allows competing standards to create profiles that have a shared vocabulary. As with the profile type this will be industry specific and defined separately.
 
 ```json
 {
@@ -36,7 +36,7 @@ A profile's collections are defined as an array of collection objects, each havi
 
 ### Schema
 
-The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. It includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as apposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' since we expect every record to be an object. This makes the sure the schema works with JSON Schema validators.
+The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. The schema includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as opposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' since we expect every record to be an object. This ensures the schema works with JSON Schema validators.
 
 ```json
 {
