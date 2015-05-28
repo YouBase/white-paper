@@ -88,9 +88,9 @@ Each link object will have a name, size, and hash. The hash is a hash of the ref
 
 ### Revision - Document Hash
 
-A revision is similiar to a revision in CouchDB. In YouBase, however, the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision that they are updating as "\_lastrev" which is included in the hash creating "\_rev".
+A revision is similiar to a revision in CouchDB. In YouBase, however, the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision they are updating as "\_lastrev" which is included in the hash creating "\_rev".
 
-YouBase will always return the most recent revision of any document unless a specific revision is requested. All revisions should be kept allowing us to see the entire history of a nodes data or see what it's data was at any point in time.
+YouBase will return the most recent revision of any document unless a specific revision is requested. Revisions should be kept to allow viewing of the entire history of a nodes data.
 
 ### Notaries
 
