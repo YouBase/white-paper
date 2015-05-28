@@ -84,11 +84,11 @@ Documents as defined above should to be kept small in order to be tranferred in 
   }
 ```
 
-Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this stratagy is efficient as multiple files with the same content have the same lookup key preventing the storage and retrieval of the same content multiple times. It has the added benifit of being able to validate the content returned by simply hashing it and making sure the hash matches the key.
+Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this stratagy is efficient as multiple files with the same content have the same lookup key preventing the storage and retrieval of the same content multiple times. There's an added benefit of validating the content returned by hashing it and making sure the hash matches the key.
 
 ### Revision - Document Hash
 
-A revision is similiar to a revision in CouchDB. In YouBase though the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision that they are updating as "\_lastrev" which is included in the hash creating "\_rev".
+A revision is similiar to a revision in CouchDB. In YouBase, however, the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision that they are updating as "\_lastrev" which is included in the hash creating "\_rev".
 
 YouBase will always return the most recent revision of any document unless a specific revision is requested. All revisions should be kept allowing us to see the entire history of a nodes data or see what it's data was at any point in time.
 
