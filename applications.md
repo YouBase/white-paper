@@ -1,10 +1,10 @@
 # Applications
 
-YouBase is designed to provide a substrate on which any individual centric service can be built. Instead of defining all possible application we are providing several potential use cases and examples on how YouBase can be used to solve specific problems.
+YouBase is designed to provide a substrate on which any individual-centric service can be built. Instead of defining all possible application we are providing several potential use cases and examples on how YouBase can be used to solve specific problems. We intend to follow with industry-specific papers on how YouBase can be used to solve a wide variety of personal data store problems.
 
 ## Identity
 
-By default YouBase does not contain or require any identifiable information.  However for uses like loging into a site or providing goverment issued identification an identity profile can be defined. Keeping all identity information in an identitiy profile keeps it siloed from all other personal information. An individual would be able to create multiple identity profiles to separate data even further and provide fine grate control.
+By default, YouBase does not contain or require any personally-identifiable information.  However for uses such as logging into a site or providing government-issued identification, an identity profile can be defined. Keeping all identity information in an identity profile keeps it siloed from all other personal information with an individual's YouBase wallet. An individual would be able to create multiple identity profiles to separate data even further and provide fine-grain control.
 
 An identity profile could have a collection dedicated to government issued ids giving the government write access to that collection. This would allow the government to write ids directly to a persons wallet including an issuer signature to prove the id is valid. By owning the private key to that profile a person could verify that the id is both valid and owned by them.
 
