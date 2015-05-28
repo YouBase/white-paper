@@ -88,15 +88,15 @@ Each link object will have a name, size, and hash. The hash is a hash of the ref
 
 ### Revision - Document Hash
 
-A revision is similiar to a revision in CouchDB. In YouBase, however, the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision they are updating as "\_lastrev" which is included in the hash creating "\_rev".
+A revision is similar to a revision in CouchDB. In YouBase, however, the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision they are updating as "\_lastrev" which is included in the hash creating "\_rev".
 
-YouBase will return the most recent revision of any document unless a specific revision is requested. Revisions should be kept to allow viewing of the entire history of a nodes data.
+YouBase will return the most recent revision of any document unless a specific revision is requested. Revisions should be kept to allow viewing of the entire history of a node's data.
 
 ### Notaries
 
-Notaries are entities that are not the wallet owner but certify the validity of the data. As notaries are not included in the document hash (\_rev) they can be added to and removed at will without changing the validity of a document. 
+Notaries are entities that are not the wallet owner but certify the validity of the data. As notaries are not included in the document hash (\_rev), they can be added to and removed at will without changing the validity of a document. 
 
-The only required signature in the notaries field is that of the issuer. If an issuer is listed in the data field the document, the issuer will also have a valid signature in the notaries list. With the exception of the issuer signature if the notaries field contains an invalid signature then it should simply be removed instead of invalidating the entire document. 
+The only required signature in the notary field is that of the issuer. If an issuer is listed in the data field of the document, the issuer should also have a valid signature in the notaries list. With the exception of the issuer signature, if the notary field contains an invalid signature then it should simply be removed instead of invalidating the entire document. 
 
 ```json
   {
