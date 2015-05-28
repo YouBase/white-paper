@@ -84,7 +84,7 @@ Documents as defined above should to be kept small in order to be tranferred in 
   }
 ```
 
-Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This lets us store the data in a data store that uses the content hash as a lookup key. Using this stratagy is very efficient since multiple files with the same content always has the same lookup key preventing the storage and retrieval of the same content multiple times. It has the added benifit of being able to validate the content returned by simply hashing it and making sure the hash matches the key.
+Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this stratagy is efficient as multiple files with the same content have the same lookup key preventing the storage and retrieval of the same content multiple times. It has the added benifit of being able to validate the content returned by simply hashing it and making sure the hash matches the key.
 
 ### Revision - Document Hash
 
