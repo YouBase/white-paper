@@ -32,7 +32,7 @@ The document's id is an address generated from the public key and is a valid bit
 
 ### Data
 
-The data field is the meat of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field will follow a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
+The data field is the meat of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field follows a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
 
 ```json
   {
@@ -59,7 +59,7 @@ The data field is the meat of a document. It contains timestamps, references to 
 
 ### Links
 
-Documents need to be kept small in order to be tranfered in a fast and efficient manner. To handle larger records and attachments YouBase uses a links field thet contains references to a content addressable data store such as IPFS. The links field is an array of link objects inspired by the format used in IPFS. 
+Documents as defined above should to be kept small in order to be tranferred in a fast and efficient manner. To handle larger records and attachments, YouBase uses a links field containing references to a content addressable data store (such as IPFS). The links field is an array of link objects similar to the format used in IPFS. 
 
 ```json
   {
