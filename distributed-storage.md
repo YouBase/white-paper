@@ -84,7 +84,7 @@ Documents as defined above should to be kept small in order to be tranferred in 
   }
 ```
 
-Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this stratagy is efficient as multiple files with the same content have the same lookup key preventing the storage and retrieval of the same content multiple times. There's an added benefit of validating the content returned by hashing it and making sure the hash matches the key.
+Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this strategy drives efficientcy as multiple files with the same content have the same lookup key, preventing the storage and retrieval of the same content multiple times. There's an added benefit of validating the content returned by hashing it and making sure the hash matches the key.
 
 ### Revision - Document Hash
 
@@ -94,9 +94,9 @@ YouBase will return the most recent revision of any document unless a specific r
 
 ### Notaries
 
-Notaries are entities that are not the wallet owner but are certifying the validity of the data. Since notaries are not included in the document hash (\_rev) they can be added to and removed at will without changing the validity of a document. 
+Notaries are entities that are not the wallet owner but certify the validity of the data. As notaries are not included in the document hash (\_rev) they can be added to and removed at will without changing the validity of a document. 
 
-The only required signature in the notaries field is that of the issuer. If an issuer is listed in the data field the document should also have a valid signature in the notaries list. With the exception of the issuer signature if the notaries field contains an invalid signature then it should simply be removed instead of invalidating the entire document. 
+The only required signature in the notaries field is that of the issuer. If an issuer is listed in the data field the document, the issuer will also have a valid signature in the notaries list. With the exception of the issuer signature if the notaries field contains an invalid signature then it should simply be removed instead of invalidating the entire document. 
 
 ```json
   {
