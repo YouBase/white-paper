@@ -15,7 +15,7 @@ Finally, using bitcoin wallet structure means data exchange is enabled by allowi
 
 ## Creating the wallet
 
-HD wallets are created from a root seed, meaning they can be backed up, restored, exported and imported by transferring the root seed. Seeds can be represented through a mnemonic sequence so they are easy to transcribe and remember via BIP39. The root seed acts as input into a hash algroithm to create master private key, chain code and master public key. Please review  HMAC-SHA512 hashing function, BIP32 and BIP44 for more information on these elements and child key creation.
+HD wallets are created from a root seed, meaning they can be backed up, restored, exported and imported by transferring the root seed. Seeds can be represented through a mnemonic sequence so they are easy to transcribe and remember via BIP39. The root seed acts as input into a hash algroithm to create master private key, chain code and master public key. Please review cryptographic hashing functions, BIP32 and BIP44 for more information on these elements and child key creation.
 
 The client software will manage the HD Wallet, including the encrypted seed and top-level master key pair. This client software could exist on the web, smartphone or local computer. Depending on where the client lives, wallet access can be granted via pin code, biometrics, or other means.
 
