@@ -36,7 +36,7 @@ A profile's collections are defined as an array of collection objects, each havi
 
 ### Schema
 
-The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. The schema includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as opposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' since we expect every record to be an object. This ensures the schema works with JSON Schema validators.
+The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. The schema includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as opposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' as we expect every record to be an object. This ensures the schema works with JSON Schema validators.
 
 ```json
 {
@@ -84,7 +84,7 @@ The required field, also part of the JSON Schema standard, is a simple array ind
 
 The hardened field is an extension to JSON Schema that is an array of property keys similar to the required field. Each property listed will be encrypted using the extended public key as the decryption key. This means the property will be unreadable by itself but can be decrypted when accessed as part of a tree.
 
-As it is not possible to tell if a field is encrypted or just random data this is not checked by validators. Instead clients use the hardened field to know which properties are encrypted. It should also only reference properties that are of type 'string' instead of complex objects.
+As it is not possible to tell if a field is encrypted or just random data, this is not checked by validators. Instead, clients use the hardened field to know which properties are encrypted. It should also only reference properties that are of type 'string' instead of complex objects.
 
 #### Encrypted
 
