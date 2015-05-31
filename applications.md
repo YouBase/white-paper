@@ -34,7 +34,7 @@ There are a number of widely-known problems in health IT that an individual-cent
 
 **Connecting consumer-generated data, clinical data and claims data.** Consumers can have a single container to directly connect their validated clinical and claims data, or donate this validated information to an external party.
 
-**Research**. Consumers can anonymously donate their *validated* data with a minimal metadata or personal information.
+**Research**. Consumers can anonymously donate their *validated* data with minimal metadata or personal information.
 
 **Identification at point of care**. YouBase will be able to provide validated identity at the point of care, while maintaining privacy.
 
