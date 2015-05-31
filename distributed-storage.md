@@ -32,7 +32,7 @@ The document's id is an address generated from the public key and is a valid bit
 
 ### Data
 
-The data field is the core of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field follows a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
+The data field is the meat of a document, containing: timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field follows a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
 
 ```json
 {
@@ -84,7 +84,7 @@ Documents as defined above should be kept small in order to be transferred in a 
 }
 ```
 
-Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this strategy drives efficiency as multiple files with the same content have the same lookup key, preventing the storage and retrieval of the same content multiple times. There's an added benefit of validating the content returned by hashing it and making sure the hash matches the key.
+Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this strategy drives efficiency as multiple files with the same content have the same lookup key, preventing the storage and retrieval of the same content multiple times. There's an added benefit of validating the content returned by hashing it and ensuring the hash matches the key.
 
 ### Revision - Document Hash
 
