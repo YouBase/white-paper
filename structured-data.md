@@ -10,12 +10,8 @@ Secondly, along with that data structure, different rights to the tree have perm
 
 Third, HD Wallets are flexible in that they can create sequences of public keys without having access to the private keys, so that read-only or receive-only permission can be granted in less secure environments without risking access to the private keys. From the outside (with access to a public key), there is no indication that the key is part of any larger structure. It becomes a bitcoin address like any other.
 
-In additon, 
-3. Tie payments to trusted information exchange.
+Finally, using bitcoin wallets means data exchange is enabled by allowing for the ability to tie payments to trusted information exchange, and rapidly transfer just about any type of data from one party to another. Think of a universal, secure email for data with unique addresses that are verifiable, but private.
 
-4. Quickly and easily recover from data breaches. Since a compromised key means only information in that part of the tree is compromised, such keys can be quickly marked as "dead" and all associated data can be copied to another address.
-
-5. Rapidly transfer just about any type of data from one a party to another. Think of a universal, secure email for data with unique addresses that are verifiable, but private.
 
 ## Creating the wallet
 
