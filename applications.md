@@ -6,9 +6,9 @@ YouBase is designed to provide a substrate on which any individual-centric servi
 
 By default, YouBase does not contain or require any personally-identifiable information.  However for uses such as logging into a site or providing government-issued identification, an identity profile can be defined. Keeping all identity information in an identity profile keeps it siloed from all other personal information with an individual's YouBase wallet. An individual would be able to create multiple identity profiles to separate data even further and provide fine-grain control.
 
-An identity profile could have a collection dedicated to government issued IDs giving the government write access to that collection. This would allow the government to write ids directly to a person's wallet including an issuer signature to prove the ID is valid. By owning the private key to that profile, a person could verify that the id is both valid and owned by them.
+An identity profile could have a collection dedicated to government issued IDs giving the authorizing entity write access to that collection. This would allow the authorizing entity to write ids directly to a person's wallet including an issuer signature to prove the ID is valid. By owning the private key to that profile, a person could verify that the ID is both valid and owned by them.
 
-Logging into a service with an ID simply requires signing a message with the profile's private key that can then be validated with the public key. This allows for authentication without transferring and sensitive information.
+Logging into a service with an ID simply requires signing a message with the profile's private key that can then be validated with the public key. This allows for authentication without transferring sensitive information.
 
 Using a method similiar to [Keybase](https://keybase.io) and [Onename](https://onename.com) an identity profile can be linked to existing social network accounts (twitter, facebook, github, etc.) by publicly posting a message signed with the private key of a profile. The message can then be used to prove the owner of a specific identity profile is in control of that social network account.
 
