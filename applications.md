@@ -18,7 +18,7 @@ A social profile could contain collections of posts, blog articles, pictures, an
 
 As each node in a profile is a fully functional bitcoin addresss, bitcoin can be sent to any record, collection, or profile. "Like" buttons can be replaced with "tip" buttons that go directly to supporting the content creator. Care would need to be taken when transferring funds to another bitcoin address to prevent re-association of data in private data contexts, but wouldn't be an issue for public content.
 
-With larger files being linked to a content-addressable data store when a person reposts content, it simply points to the file already in the data store. This happens any time the content is the same, even if two people upload the same file separately.
+Attachments are stored in a content-addressable data store. This means that when someone shares the same content as another person, it points to the file already in the data store instead of uploading a new file. This happens any time the content is the same, even if two people upload the same file separately.
 
 With each person owning their data instead of the social network owning it, users would be able to take the same profile and make it available for use on multiple social networks. They would be able to tryout the latest service without having to start from scratch and lose their entire history.
 
