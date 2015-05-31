@@ -45,7 +45,7 @@ The path follows standard BIP32 notation where 'm' represents the master node an
 
 ### purpose'
 
-BIP43 recommends the use of a hardened purpose code to indicate the specification used by that subtree. We propose using branch 46' to identify a personal data store. All nodes under the specified purpose code should conform to the YouBase standard and will indicate to wallet software what to expect.
+BIP43 recommends the use of a hardened purpose code to indicate the specification used by that sub-tree. We propose using branch 46' to identify a personal data store. All nodes under the specified purpose code should conform to the YouBase standard and will indicate to wallet software what to expect.
 
 ### profile'
 
