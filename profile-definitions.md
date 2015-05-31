@@ -14,7 +14,7 @@ At the top level, the profile definition only includes a title, type, and an arr
 
 ## Collections
 
-A profile's collections are defined as an array of collection objects, each having a title, type, schema, and form. A collection object's position in the array determines what branch it maps to under a profile. In a collection the type field is used to describe the collections records in a consistent manner. This allows competing standards to create profiles that have a shared vocabulary. As with the profile type this will be very industry specific and will be defined separately.
+A profile's collections are defined as an array of collection objects, each having a title, type, schema, and form. A collection object's position in the array determines what branch it maps to under a profile. In a collection, the type field is used to describe the collections records in a consistent manner. This allows competing standards to create profiles that have a shared vocabulary. As with the profile type this will be industry specific and defined separately.
 
 ```json
 {
@@ -36,7 +36,7 @@ A profile's collections are defined as an array of collection objects, each havi
 
 ### Schema
 
-The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. It includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as apposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' since we expect every record to be an object. This makes sure the schema works with JSON Schema validators.
+The schema field follows the [JSON Schema](http://json-schema.org) standard and is used to validate a record. The schema includes a title, JSON Schema type, properties, and list of required fields. The title is the singular name for a record as opposed to the plural name defined in the collection title. Unlike profiles and collections, the schema type must be defined as 'object' as we expect every record to be an object. This ensures the schema works with JSON Schema validators.
 
 ```json
 {
@@ -84,11 +84,11 @@ The required field, also part of the JSON Schema standard, is a simple array ind
 
 The hardened field is an extension to JSON Schema that is an array of property keys similar to the required field. Each property listed will be encrypted using the extended public key as the decryption key. This means the property will be unreadable by itself but can be decrypted when accessed as part of a tree.
 
-Since it is not possible to tell if a field is encrypted or just random data this is not checked by validators. Instead clients use the hardened field to know which properties it should expect to be encrypted. It should also only reference properties that are of type 'string' instead of complex objects.
+As it is not possible to tell if a field is encrypted or just random data, this is not checked by validators. Instead, clients use the hardened field to know which properties are encrypted. It should also only reference properties that are of type 'string' instead of complex objects.
 
 #### Encrypted
 
-Properties listed in the encrypted field are similar to those in the hardened field but they are encrypted using the public key of the records node. This means they can only be decrypted by someone with the private key for that records node and limits access to someone with write access. Just like the hardened field encrypted properties cannot be validated and must be strings.  
+Properties listed in the encrypted field are similar to those in the hardened field but they are encrypted using the public key of the records node. This means they can only be decrypted by someone with the private key for that records node and limits access to someone with write access. Just as with the hardened field, encrypted properties cannot be validated and must be strings.  
 
 ### Form
 

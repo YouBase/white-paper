@@ -1,15 +1,26 @@
+# BIPS
+
+Bitcoin Improvement Proposals
+
 # BIP32
 
 Bitcoin wallet standard for hierarchical deterministic or "HD wallets". Hierarchical deterministic wallets have tree structures where public/private parent keys can create a sequence of child keys, child keys can create a sequence of grandchild keys, and so on with an infinite number of generations and keys. Each parent can generate 2 billion children keys.
 
 # BIP39
 
-This BIP describes the implementation of a mnemonic code or mnemonic sentence -- a group of easy to
-remember words -- for the generation of deterministic wallets.
+This BIP describes the implementation of a mnemonic code or mnemonic sentence -- a group of easy to remember words -- for the generation of deterministic wallets.
 
 # BIP43
 
 This BIP introduces a "Purpose Field" for use in deterministic wallets based on algorithm described in BIP32.
+
+# BIP44
+
+This BIP defines a logical hierarchy for deterministic wallets based on an algorithm described in BIP32 and purpose scheme described in BIP43.
+
+# BIP45
+
+This BIP defines a structure for hierarchical deterministic P2SH multi-party multi-signature wallets based on the algorithm described in BIP32 and purpose scheme described in BIP43.
 
 # Bitcoin
 
