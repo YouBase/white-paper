@@ -10,12 +10,12 @@ Secondly, along with that data structure, different rights to the tree have perm
 
 Third, HD Wallets are flexible in that they can create sequences of public keys without having access to the private keys, so that read-only or receive-only permission can be granted in less secure environments without risking access to the private keys. From the outside (with access to a public key), there is no indication that the key is part of any larger structure. It becomes a bitcoin address like any other.
 
-Finally, using bitcoin wallet structure means data exchange is enabled by allowing for the ability to tie payments to information exchange, and to transfer just about any type of data from one party to another. Think of a universal, secure email for data with unique addresses that are verifiable, but private, and must be digitally signed.
+Finally, using bitcoin wallet structure means data exchange is enabled by allowing transfer just about any type of data from one party to another and the ability to tie payments to information exchange. Think of a universal, secure email for data with unique addresses that are verifiable, but private, must be digitally signed, and can include a payment (with some privacy implications when information transfers are tied to the blockchain, more on this in a bit).
 
 
 ## Creating the wallet
 
-HD wallets are created from a root seed, meaning they can be backed up, restored, exported and imported by transferring the root seed. Seeds can be stored through a mnemonic code so they are easy to transcribe and remember via BIP39.
+HD wallets are created from a root seed, meaning they can be backed up, restored, exported and imported by transferring the root seed. Seeds can be represented through a mnemonic sequence so they are easy to transcribe and remember via BIP39. The root seed acts as input into a hash algroithm to create master private key, chain code and master public key. Please review  HMAC-SHA512 hashing function, BIP32 and BIP44 for more information on these elements and child key creation.
 
 The client software will manage the HD Wallet, including the encrypted seed and top-level master key pair. This client software could exist on the web, smartphone or local computer. Depending on where the client lives, wallet access can be granted via pin code, biometrics, or other means.
 
