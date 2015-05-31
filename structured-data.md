@@ -4,25 +4,18 @@ The core of the YouBase solution is a new kind of BIP32 hierarchical determinist
 
 The HD Wallet contains a tree structure with extended keys such that each parent key can derive the children keys, children keys can derive the grandchildren keys, etc. An extended key consists of a private or public key and a chain code.  Sharing an extended key gives (private or public) access to the entire branch. A useful application is that a user can provide an extended private key to a trusted source that can then write (deposit) information in that branch of the tree without having access to information in other branches.
 
-Providing public/private key pairings in such a structure offers a number of benefits. First, information secured in wallets with the keys can follow a pre-specified structure where different kinds of information are stored in different branches of the tree.
+Providing public/private key pairings in such a structure offers a number of benefits. First, specific branches can be used as data stores for specific types of information. Information secured in wallets can follow a pre-specified structure where different kinds of information are stored in different branches of the tree. 
 
-Secondly, rights to different parts of the tree have permissions structured such that different parties can have different read/write permissions to single nodes or to entire branches. Specifically, a private key has read/write access to the data while a public key has read access only.
+Secondly, along with that data structure, different rights to the tree have permissions structured such that different parties can have different read/write permissions to single nodes or to entire branches. Data can be partitioned into separate branches, allowing users to grant access on a granular level, down to the individual record, or even changes to a record. Specifically, a private key has read/write access to the data while a public key has read access only.
 
-Finally, HD Wallets can create sequences of public keys without having access to the private keys, so that read-only or receive-only permission can be granted in less secure environments without risking access to the private keys. From the outside (with access to a public key), there is no indication that the key is part of any larger structure. It becomes a bitcoin address like any other.
+Third, HD Wallets are flexible in that they can create sequences of public keys without having access to the private keys, so that read-only or receive-only permission can be granted in less secure environments without risking access to the private keys. From the outside (with access to a public key), there is no indication that the key is part of any larger structure. It becomes a bitcoin address like any other.
 
-The use of an HD Wallet offers several advantages, allowing the user to:
+In additon, 
+3. Tie payments to trusted information exchange.
 
-1. Control read/write access to individual leaves and branches of a tree.
+4. Quickly and easily recover from data breaches. Since a compromised key means only information in that part of the tree is compromised, such keys can be quickly marked as "dead" and all associated data can be copied to another address.
 
-2. Partition data into separate branches, allowing users to grant access on a granular level.
-
-3. Designate specific branches as data stores for specific types of information.
-
-4. Tie payments to trusted information exchange.
-
-5. Quickly and easily recover from data breaches. Since a compromised key means only information in that part of the tree is compromised, such keys can be quickly marked as "dead" and all associated data can be copied to another address.
-
-6. Rapidly transfer just about any type of data from one a party to another - a universal, secure email.
+5. Rapidly transfer just about any type of data from one a party to another. Think of a universal, secure email for data with unique addresses that are verifiable, but private.
 
 ## Creating the wallet
 
