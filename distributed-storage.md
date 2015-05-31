@@ -1,6 +1,6 @@
 # Distributed Storage
 
-By using an HD Wallet to hold the structure of the data it's storage is made much easier. Every node in the tree is stored as a JSON document in a document store where the lookup key is the node's address derived from it's public key. Storing documents in this way is very flexible and allows a user to keep their YouBase documents in a local filesystem, cloud storage, or our proposed distributed system. At the same time it allows a user to easily sync documents between different storage systems.
+By using an HD Wallet to hold the structure of the data it's storage is simplified. Every node in the tree is stored as a JSON document in a document store where the lookup key is the node's address derived from it's public key. Storing documents in this way allows for greater flexibility and allows a user to keep their YouBase documents in a local filesystem, cloud storage, or our proposed distributed system. At the same time it allows a user to easily sync documents between different storage systems.
 
 In YouBase the distributed storage is made of three main components, the BIP32 Node being stored, a signed JSON document, and storage for linked data. The following diagram illustrates how each interacts with the other.  
 
