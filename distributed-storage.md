@@ -8,7 +8,7 @@ In YouBase the distributed storage is made of three main components, the BIP32 N
 
 ## BIP-32 Node
 
-Data can be stored at every node in the HD Wallet tree by creating a signed JSON Document. The public and private keys are not stored in the document but are used to secure the document and control access to it. Large amounts of data can be stored at the node by using the link storage discribed later.
+Data can be stored at every node in the HD Wallet tree by creating a signed JSON Document. The public and private keys are not stored in the document but are used to secure the document and control access to it. Large amounts of data can be stored at the node by using the link storage, described later.
 
 ## Document
 
@@ -32,7 +32,7 @@ The document's id is an address generated from the public key and is a valid bit
 
 ### Data
 
-The data field is the meat of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field follows a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
+The data field is the core of a document. It contains timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field follows a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
 
 ```json
 {
