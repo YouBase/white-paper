@@ -32,7 +32,7 @@ The blockchain is a decentralized, immutable, public ledger of all transactions 
 
 # DHT
 
-Distributed Hash Table: A decentralized, distributed system for storing key/value pairs where any node in the network can efficiently retrieve a value given a certain key. Ability to map keys to values is distributed among the nodes, such that changes to participating nodes is minimally disruptive.
+Distributed Hash Table: a decentralized, distributed system for storing key/value pairs where any node in the network can efficiently retrieve a value given a certain key. Ability to map keys to values is distributed among the nodes, such that changes to participating nodes is minimally disruptive.
 
 # HD Wallet
 
