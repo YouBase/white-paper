@@ -1,16 +1,18 @@
 # Distributed Storage
 
-By using an HD Wallet to hold the structure of the data, it's storage is simplified. Every node in the tree is stored as a JSON document in a document store where the lookup key is the node's address derived from it's public key. Storing documents in this way provides flexibility and allows a user to keep YouBase documents in a local filesystem, cloud storage, or our proposed distributed system. At the same time it allows a user to easily sync documents between different storage systems.
+Using an HD Wallet to hold the structure of the data provides flexibility and allows a user to keep YouBase documents in a local filesystem, cloud storage, or our proposed distributed hash table. At the same time it allows a user to easily sync documents between different storage systems.
 
-In YouBase the distributed storage is made of three main components, the BIP32 Node being stored, a signed JSON document, and storage for linked data. The following diagram illustrates how each interacts with the other.  
+Generically, YouBase describes the storage of two types of data: **public-key-addressable**, and **content-addressable**. BIP32 nodes are stored as signed JSON documents, where each node is addressable by its public key hash, or what would be a bitcoin address if we intended to use these nodes to transact on bitcoin's blockchain (which, although not necessary, is certainly possible). These documents contain links to external content which, in contrast to the BIP32 nodes, is addressable by the hash of the content.
+
+We illustrate here our ideal YouBase implementation, in which the document store is a public-key-addressable **distributed hash table** of BIP32 nodes, while the external content is stored in IPFS or some other content-addressable **peer-to-peer file system**.
 
 ![Distributed Storage](/diagrams/distributed-storage.png)
 
-## BIP-32 Node
+## Document store: public-key-addressable distributed hash table
 
 Data can be stored at every node in the HD Wallet tree by creating a signed JSON Document. The public and private keys are not stored in the document but are used to secure the document and control access to it. Large amounts of data can be stored at the node by using the link storage, described later.
 
-## Document
+### Document
 
 The document is stored in a DHT where the lookup key is an address generated from the public key. The document is saved as JSON and contains the address as an id, revision, document data, document links, and a signature.
 
@@ -26,11 +28,11 @@ The document is stored in a DHT where the lookup key is an address generated fro
 }
 ```
 
-### ID - Address
+#### ID - Address
 
 The document's id is an address generated from the public key and is a valid bitcoin address. It is used as the lookup key but also included in the saved document to make syncing and validating easier.
 
-### Data
+#### Data
 
 The data field is the meat of a document, containing: timestamps, references to profile definition, issuer, signatures, demographic information, and the actual information to be stored. The data field follows a standard format defined in a separate YouBase specification document. The data field can also reference links as described in the next section.
 
@@ -57,9 +59,9 @@ The data field is the meat of a document, containing: timestamps, references to 
 }
 ```
 
-### Links
+#### Links
 
-Documents as defined above should be kept small in order to be transferred in a fast and efficient manner. To handle larger records and attachments, YouBase uses a links field containing references to a content addressable data store (such as IPFS). The links field is an array of link objects similar to the format used in IPFS. 
+Documents as defined above should be kept small in order to be transferred in a fast and efficient manner. To handle larger records and attachments, YouBase uses a links field containing references to a content addressable data store (such as IPFS). The links field is an array of link objects similar to the format used in IPFS.
 
 ```json
 {
@@ -86,17 +88,17 @@ Documents as defined above should be kept small in order to be transferred in a 
 
 Each link object will have a name, size, and hash. The hash is a hash of the referenced content. This allows for using the content hash as a lookup key to the data store. Using this strategy drives efficiency as multiple files with the same content have the same lookup key, preventing the storage and retrieval of the same content multiple times. There's an added benefit of validating the content returned by hashing it and ensuring the hash matches the key.
 
-### Revision - Document Hash
+#### Revision - Document Hash
 
 A revision is similar to a revision in CouchDB. In YouBase, however, the revision is always a hash of the data and link field. Any updates to a node need to reference the document revision they are updating as "\_lastrev" which is included in the hash creating "\_rev".
 
 YouBase will return the most recent revision of any document unless a specific revision is requested. Revisions should be kept to allow viewing of the entire history of a node's data.
 
-### Notaries
+#### Notaries
 
-Notaries are entities that are not the wallet owner but certify the validity of the data. As notaries are not included in the document hash (\_rev), they can be added to and removed at will without changing the validity of a document. 
+Notaries are entities that are not the wallet owner but certify the validity of the data. As notaries are not included in the document hash (\_rev), they can be added to and removed at will without changing the validity of a document.
 
-The only required signature in the notary field is that of the issuer. If an issuer is listed in the data field of the document, the issuer should also have a valid signature in the notaries list. With the exception of the issuer signature, if the notary field contains an invalid signature then it should simply be removed instead of invalidating the entire document. 
+The only required signature in the notary field is that of the issuer. If an issuer is listed in the data field of the document, the issuer should also have a valid signature in the notaries list. With the exception of the issuer signature, if the notary field contains an invalid signature then it should simply be removed instead of invalidating the entire document.
 
 ```json
 {
@@ -112,10 +114,10 @@ The only required signature in the notary field is that of the issuer. If an iss
 }
 ```
 
-### Signature
+#### Signature
 
 To ensure a document is valid it must include a signature of the document hash by the node's private key. When a document is saved the document store simply checks the signature against the document hash and id.
 
-## Link Storage - Content Addressable Data Store
+## Link store: content-addressable peer-to-peer file system
 
 As mentioned above, the link storage is a key value store where the lookup key is a hash of the contents. This can be as simple as a file saved to the local file system, where the file name is a hash of the file content or a proprietary cloud solutions like Amazon S3 where, again, the file name is a hash of the contents. IPFS is the logical choice for YouBase at this time as IPFS fulfills current requirements for a distributed store, independent of any one 3rd party.
