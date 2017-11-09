@@ -1,6 +1,8 @@
-# YouBase (Draft 1)
+# YouBase White Paper Summary (Draft 1.5)
 
-By *Josh Robinson* & *Leonard Kish*
+By *Josh Robinson* & *Leonard Kish* & *Akhsar Kharebov*
+
+## Entire Text: https://paper.youbase.io/content/index.html
 
 ### Abstract
 
